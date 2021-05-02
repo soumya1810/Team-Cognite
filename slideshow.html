@@ -1,0 +1,148 @@
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+  
+  <title>Cognite</title>
+  <style type="text/css">
+  	body {
+  background-color: #000;
+  /*font-family: 'PT Sans', sans-serif;*/
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 38vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+ /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);*/
+  margin: 0.5em auto;
+}
+.entryLink {
+  color: #fff;
+  opacity: 1;
+}
+
+.entryLink:hover {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.entryLink:focus {
+  color: #fff;
+  opacity: 0.8;
+  outline: 0;
+  text-decoration: none;
+}
+
+.entryLink:visited {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear 2.5s infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://www.usnews.com/cmsmedia/a0/33/802a178e438fa7255b6a83c1a17f/160308-payday-stock.jpg);
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://image.jimcdn.com/app/cms/image/transf/dimension=4000x3000:format=jpg/path/s66b838f2a369e17d/image/i0c5bf44675a067bd/version/1556109443/image.jpg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://th.bing.com/th/id/R278ee77f72422bdd19b41c81bda944ec?rik=AKUst3lruMnTvQ&riu=http%3a%2f%2fimages.huffingtonpost.com%2f2010-06-16-unemployment.jpg&ehk=mV96ihAY6VvjBjLa2b40SgrdJRiCtR67beEdtuai8pk%3d&risl=&pid=ImgRaw);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://thecsrjournal.in/wp-content/uploads/2019/03/smes.jpg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://s3.amazonaws.com/ae-lane-report/wp-content/uploads/2020/04/02103257/Unemployment.jpg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0%, 40% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+    transform: scale(1);
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+    transform: scale(1.1);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+  opacity: 1;
+}
+  </style>
+</head>
+
+<body>
+  
+  
+ <div id="landing-header">
+    <h1><a class="entryLink" href="about.html">COGNITE</a></h1>
+    <a class="entryLink" href="about.html">Path To Success</a>
+  </div>
+  
+  <ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+
+</html>
+
